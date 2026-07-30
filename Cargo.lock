@@ -1819,6 +1819,8 @@ dependencies = [
  "jsonwebtoken",
  "o-usah-core",
  "o-usah-models",
+ "serde",
+ "uuid",
 ]
 
 [[package]]
