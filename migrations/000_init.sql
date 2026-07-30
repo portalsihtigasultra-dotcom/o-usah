@@ -5,7 +5,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- Enum: tipe pos pengamatan
 CREATE TYPE tipe_pos_enum AS ENUM (
     'curah_hujan',
-    'debit_tma',
+    'debit',
     'klimatologi',
     'kualitas_air'
 );
@@ -19,8 +19,7 @@ CREATE TYPE user_role_enum AS ENUM (
 
 -- Enum: status data
 CREATE TYPE status_data_enum AS ENUM (
-    'draft',
-    'menunggu',
+    'mentah',
     'tervalidasi',
     'ditolak'
 );

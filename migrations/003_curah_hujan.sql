@@ -3,10 +3,10 @@ CREATE TABLE curah_hujan (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     pos_id          UUID NOT NULL REFERENCES pos_pengamatan(id) ON DELETE RESTRICT,
     tanggal         DATE NOT NULL,
-    nilai_mm        DOUBLE PRECISION NOT NULL,
-    jam_pengukuran  TIME,
+    nilai_mm        REAL NOT NULL,
+    jam_pengukuran  TIME NOT NULL,
     petugas_id      UUID NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
-    status          status_data_enum NOT NULL DEFAULT 'draft',
+    status          status_data_enum NOT NULL DEFAULT 'mentah',
     keterangan      TEXT,
     created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
