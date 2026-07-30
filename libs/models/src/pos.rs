@@ -1,0 +1,1 @@
+// Pos pengamatan model

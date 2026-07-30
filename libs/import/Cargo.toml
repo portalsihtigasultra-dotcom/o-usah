@@ -1,0 +1,8 @@
+[package]
+name = "o-usah-import"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+o-usah-core = { path = "../core" }
+o-usah-models = { path = "../models" }

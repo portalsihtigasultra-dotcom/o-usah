@@ -3,5 +3,60 @@
 version = 4
 
 [[package]]
-name = "o-usah"
+name = "o-usah-auth"
+version = "0.1.0"
+dependencies = [
+ "o-usah-core",
+ "o-usah-models",
+]
+
+[[package]]
+name = "o-usah-core"
+version = "0.1.0"
+
+[[package]]
+name = "o-usah-db"
+version = "0.1.0"
+dependencies = [
+ "o-usah-core",
+ "o-usah-models",
+]
+
+[[package]]
+name = "o-usah-domain-ch"
+version = "0.1.0"
+dependencies = [
+ "o-usah-core",
+ "o-usah-models",
+]
+
+[[package]]
+name = "o-usah-export"
+version = "0.1.0"
+dependencies = [
+ "o-usah-core",
+ "o-usah-models",
+]
+
+[[package]]
+name = "o-usah-import"
+version = "0.1.0"
+dependencies = [
+ "o-usah-core",
+ "o-usah-models",
+]
+
+[[package]]
+name = "o-usah-models"
+version = "0.1.0"
+dependencies = [
+ "o-usah-core",
+]
+
+[[package]]
+name = "o-usah-server"
+version = "0.1.0"
+
+[[package]]
+name = "o-usah-web"
 version = "0.1.0"

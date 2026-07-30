@@ -1,0 +1,1 @@
+// Detail data curah hujan
