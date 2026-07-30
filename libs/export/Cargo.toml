@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+rust_xlsxwriter = "0.83"
+chrono = "0.4"
 o-usah-core = { path = "../core" }
 o-usah-models = { path = "../models" }

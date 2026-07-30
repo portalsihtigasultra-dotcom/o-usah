@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+sqlx = { version = "0.8", features = ["postgres", "runtime-tokio", "tls-rustls", "chrono", "uuid", "migrate"] }
+tokio = { version = "1", features = ["full"] }
 o-usah-core = { path = "../core" }
 o-usah-models = { path = "../models" }
