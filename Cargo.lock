@@ -167,6 +167,8 @@ dependencies = [
  "http",
  "http-body",
  "http-body-util",
+ "hyper",
+ "hyper-util",
  "itoa",
  "matchit 0.7.3",
  "memchr",
@@ -176,10 +178,15 @@ dependencies = [
  "pin-project-lite",
  "rustversion",
  "serde",
+ "serde_json",
+ "serde_path_to_error",
+ "serde_urlencoded",
  "sync_wrapper",
+ "tokio",
  "tower",
  "tower-layer",
  "tower-service",
+ "tracing",
 ]
 
 [[package]]
@@ -233,6 +240,7 @@ dependencies = [
  "sync_wrapper",
  "tower-layer",
  "tower-service",
+ "tracing",
 ]
 
 [[package]]
@@ -1911,7 +1919,7 @@ dependencies = [
 name = "o-usah-web"
 version = "0.1.0"
 dependencies = [
- "axum 0.8.9",
+ "axum 0.7.9",
  "console_error_panic_hook",
  "gloo-net",
  "leptos",
@@ -1922,6 +1930,8 @@ dependencies = [
  "serde",
  "serde_json",
  "tokio",
+ "tower",
+ "tower-http",
  "wasm-bindgen",
  "web-sys",
 ]
